@@ -10,7 +10,7 @@ dist
 node_modules
 
 # Docker
-DockerFile
+# DockerFile
 
 # Media
 /media/

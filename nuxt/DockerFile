@@ -1,0 +1,29 @@
+FROM node:22-alpine
+
+WORKDIR /app
+
+ENV HOST 0.0.0.0
+
+RUN apk add git
+
+# CMD [ "npm", "ci" ]
+CMD [ "npm", "run", "dev" ]
+
+
+
+# FROM node:22-alpine
+
+# WORKDIR /app
+
+# COPY ./nuxt/package.json .
+# COPY ./nuxt/package-lock.json .
+
+# COPY ./nuxt .
+
+# RUN apk add git
+# RUN npm install
+# RUN npm run build
+
+# ENV HOST 0.0.0.0
+
+# CMD [ "node", ".output/server/index.mjs" ]
